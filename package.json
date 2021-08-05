@@ -1,0 +1,34 @@
+{
+  "name": "num-calc",
+  "version": "1.0.0",
+  "description": "Solve the floating-point and large number calculation problems in ECMAScript language",
+  "main": "lib/num-calc.js",
+  "unpkg": "dist/num-calc.js",
+  "module": "esm/num-calc.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickLJudy/num-calc.git"
+  },
+  "author": "galenyoung",
+  "keywords": [
+    "clac",
+    "big number",
+    "floating number",
+    "numerical calculation",
+    "number",
+    "bigint",
+    "string",
+    "js"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickLJudy/num-calc/issues"
+  },
+  "homepage": "https://github.com/NickLJudy/num-calc#readme"
+}
