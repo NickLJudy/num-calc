@@ -1,17 +1,17 @@
-import {checkoutClacFnParamsDataType} from './util/errorSummary';
+import {checkoutCalcFnParamsDataType} from './util/errorSummary';
 import {
   generateArrayOfSameValue,
   convertExpand,
   safeInteger,
   devide,
-} from './util';
+} from './util/index';
 
 /**
  * @return [string]
 */
-export function clac(num1, num2, operator = '+') {
-  checkoutClacFnParamsDataType(num1);
-  checkoutClacFnParamsDataType(num2);
+export function calc(num1, num2, operator = '+') {
+  checkoutCalcFnParamsDataType(num1);
+  checkoutCalcFnParamsDataType(num2);
 
   const [numDigit1, innerExpandNum1] = convertExpand(num1);
   const [numDigit2, innerExpandNum2] = convertExpand(num2);

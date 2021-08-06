@@ -2,7 +2,7 @@ function unifiedHandlingDataTypeError(functionName, parameter) {
   throw new Error(`Please check the function:${functionName} parameter(${parameter}) data type(${typeof parameter} is not allowed).`);
 }
 
-export function checkoutClacFnParamsDataType(param) {
+export function checkoutCalcFnParamsDataType(param) {
   const datatype = typeof param;
   const datatypeArr = ['string', 'number', 'bigint'];
 
