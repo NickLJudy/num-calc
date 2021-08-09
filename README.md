@@ -3,7 +3,9 @@
 Solve the ECMAScript language large number calculation and floating point number problem.
 The underlying method relies on the **BigInt** data type.
 
-<!-- [![Build Status](https://travis-ci.com/NickLJudy/numeral-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/numeral-calc) -->
+[![Build Status](https://travis-ci.com/NickLJudy/num-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/numeral-calc)
+[![Version](https://img.shields.io/npm/v/numeral-calc.svg?maxAge=300&label=version&colorB=007ec6&maxAge=300)](./package.json)
+
 ## Installation
 
 The numeral-calc package lives in [npm](https://www.npmjs.com/get-npm). To install the latest stable version, run the following command:
