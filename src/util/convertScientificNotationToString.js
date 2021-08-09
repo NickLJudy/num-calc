@@ -1,4 +1,4 @@
-import { unifiedHandlingDataTypeError } from './index';
+import { unifiedHandlingDataTypeError } from './errorSummary';
 
 export function removeExtraZeros(param) {
   const paramStr = String(param);

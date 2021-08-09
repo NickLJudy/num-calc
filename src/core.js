@@ -44,7 +44,7 @@ export function calc(num1, num2, operator = '+') {
     case 'multiply': return union(String(expandNum1 * expandNum2).split(''), maxDigit * 2);
 
     case '/':
-    case 'divide': devide(expandNum1, expandNum2);
+    case 'divide': return devide(expandNum1, expandNum2);
 
     case '-':
     case 'minus':

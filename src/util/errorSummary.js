@@ -1,4 +1,4 @@
-function unifiedHandlingDataTypeError(functionName, parameter) {
+export function unifiedHandlingDataTypeError(functionName, parameter) {
   throw new Error(`Please check the function:${functionName} parameter(${parameter}) data type(${typeof parameter} is not allowed).`);
 }
 

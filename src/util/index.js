@@ -1,4 +1,5 @@
-import convertScientificNotationToString, { removeExtraZeros } from 'convertScientificNotationToString';
+import convertScientificNotationToString, { removeExtraZeros } from './convertScientificNotationToString';
+import {multi,sub,add} from './../index';
 
 function isDecimal(param) {
   const paramStr = String(param);
@@ -11,7 +12,7 @@ function isDecimal(param) {
 export function devide(a, b) {
   const imperfect = a / b;
 
-  return String(Number(imperfect) + Number(a - imperfect * b) / Number(b));
+  return add(imperfect, sub(a,multi(imperfect , b)) / Number(b));
 }
 
 
@@ -23,7 +24,7 @@ export function generateArrayOfSameValue(length, value) {
 }
 
 export function safeInteger(num) {
-  return num >= Number.MAX_SAFE_INTEGER || num <= Number.MIN_SAFE_INTEGER ?
+  return num < Number.MAX_SAFE_INTEGER && num > Number.MIN_SAFE_INTEGER ?
     (isDecimal(num) ? removeExtraZeros(num) : num) :
     String(num);
 }
