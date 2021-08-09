@@ -9,7 +9,7 @@ export default [
   //CommonJS
   {
     input,
-    output: { file: 'lib/num-calc.js', format: 'cjs', indent: false },
+    output: { file: 'lib/numeral-calc.js', format: 'cjs', indent: false },
     external,
     plugins,
   },
@@ -17,7 +17,7 @@ export default [
   //ESM
   {
     input,
-    output: { file: 'esm/num-calc.js', format: 'esm', indent: false },
+    output: { file: 'esm/numeral-calc.js', format: 'esm', indent: false },
     external,
     plugins,
   },
@@ -26,9 +26,9 @@ export default [
   {
     input,
     output: {
-      file: 'dist/num-calc.js',
+      file: 'dist/numeral-calc.js',
       format: 'umd',
-      name: 'num-calc',
+      name: 'numeral-calc',
       indent: false
     },
     external,
@@ -39,9 +39,9 @@ export default [
   {
     input,
     output: {
-      file: 'dist/num-calc.min.js',
+      file: 'dist/numeral-calc.min.js',
       format: 'umd',
-      name: 'num-calc',
+      name: 'numeral-calc',
       indent: false
     },
     external,

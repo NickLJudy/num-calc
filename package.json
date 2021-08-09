@@ -1,10 +1,10 @@
 {
-  "name": "num-calc",
+  "name": "numeral-calc",
   "version": "1.0.0",
   "description": "Solve the floating-point and large number calculation problems in ECMAScript language",
-  "main": "lib/num-calc.js",
-  "unpkg": "dist/num-calc.js",
-  "module": "esm/num-calc.js",
+  "main": "lib/numeral-calc.js",
+  "unpkg": "dist/numeral-calc.js",
+  "module": "esm/numeral-calc.js",
   "directories": {
     "example": "examples"
   },
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NickLJudy/num-calc.git"
+    "url": "git+https://github.com/NickLJudy/numeral-calc.git"
   },
   "author": "galenyoung",
   "keywords": [
@@ -28,9 +28,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NickLJudy/num-calc/issues"
+    "url": "https://github.com/NickLJudy/numeral-calc/issues"
   },
-  "homepage": "https://github.com/NickLJudy/num-calc#readme",
+  "homepage": "https://github.com/NickLJudy/numeral-calc#readme",
   "devDependencies": {
     "rollup": "^2.56.0",
     "rollup-plugin-terser": "^7.0.2"
