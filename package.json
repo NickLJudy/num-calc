@@ -5,6 +5,7 @@
   "main": "lib/numeral-calc.js",
   "unpkg": "dist/numeral-calc.js",
   "module": "esm/numeral-calc.js",
+  "types": "src/index.d.ts",
   "directories": {
     "example": "examples"
   },
@@ -27,6 +28,7 @@
     "js"
   ],
   "license": "ISC",
+  "sideEffects": false,
   "bugs": {
     "url": "https://github.com/NickLJudy/numeral-calc/issues"
   },
