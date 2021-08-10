@@ -6,6 +6,6 @@ export function checkoutCalcFnParamsDataType(param) {
   const datatype = typeof param;
   const datatypeArr = ['string', 'number', 'bigint'];
 
-  if (datatype === 'string' && isNaN(Number(param))) unifiedHandlingDataTypeError('clac',param);
-  if (!datatypeArr.includes(datatype)) unifiedHandlingDataTypeError('clac',param);
+  if (datatype === 'string' && isNaN(Number(param))) unifiedHandlingDataTypeError('calc',param);
+  if (!datatypeArr.includes(datatype)) unifiedHandlingDataTypeError('calc',param);
 }

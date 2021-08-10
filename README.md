@@ -8,6 +8,8 @@ Supports scientific numeration calculations.
 
 [![Build Status](https://travis-ci.com/NickLJudy/num-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/num-calc)
 [![Version](https://img.shields.io/npm/v/numeral-calc.svg?maxAge=300&label=version&colorB=007ec6&maxAge=300)](./package.json)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/numeral-calc)](https://bundlephobia.com/package/numeral-calc)
+![dependencies-logo](https://status.david-dm.org/gh/NickLJudy/numeral-calc.svg)
 ![last-commit-date-logo](https://img.shields.io/github/last-commit/NickLJudy/numeral-calc)
 ## Installation
 
@@ -45,3 +47,9 @@ devide(9007199254740997,2) // "4503599627370498.5"
 In the same way: calc(9007199254740997,2,"/")   //  "/" can be replaced by "divide"
 
 ```
+
+## Notice
+
+There seems to be no such business scenario. LOL
+* The divisor cannot exceed the safe range of the JS language.
+* Scientific notation exponentials cannot exceed the safe limits of the JS language.

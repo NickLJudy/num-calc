@@ -6,6 +6,7 @@
   "unpkg": "dist/numeral-calc.js",
   "module": "esm/numeral-calc.js",
   "types": "src/index.d.ts",
+  "type": "module",
   "directories": {
     "example": "examples"
   },
@@ -16,7 +17,10 @@
     "src"
   ],
   "scripts": {
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js",
+    "test": "jest",
+    "coverage":"jest --coverage",
+    "coveralls":"jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -40,6 +44,8 @@
   },
   "homepage": "https://github.com/NickLJudy/numeral-calc#readme",
   "devDependencies": {
+    "coveralls": "^3.1.1",
+    "jest": "^27.0.6",
     "rollup": "^2.56.0",
     "rollup-plugin-terser": "^7.0.2"
   }
