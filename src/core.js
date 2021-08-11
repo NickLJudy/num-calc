@@ -1,4 +1,4 @@
-import {checkoutCalcFnParamsDataType} from './util/errorSummary';
+import { checkoutCalcFnParamsDataType } from './util/errorSummary';
 import {
   generateArrayOfSameValue,
   convertExpand,
@@ -26,15 +26,17 @@ export function calc(num1, num2, operator = '+') {
   ];
 
   function union(result, digit = maxDigit) {
-    const decimalPoint = digit - result.length;
+    const [Minus, ...innerResult] = result[0] === '-' ? result : [''].concat(result);
+    const decimalPoint = digit - innerResult.length;
 
     if (decimalPoint >= 0) {
-      const resultStr = ['0.'].concat(generateArrayOfSameValue(decimalPoint, '0'), result).join('');
+      const resultStr = ['0.'].concat(generateArrayOfSameValue(decimalPoint, '0'), innerResult).join('');
 
-      return safeInteger(resultStr);
+      return safeInteger(Minus + resultStr);
     };
-    if (digit !== 0) result.splice(-digit, 0, '.');
-    return safeInteger(result.join(''))
+    if (digit !== 0) innerResult.splice(-digit, 0, '.');
+
+    return safeInteger([Minus].concat(innerResult).join(''))
   }
 
   switch (operator) {

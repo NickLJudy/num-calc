@@ -18,9 +18,9 @@
   ],
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "test": "jest",
-    "coverage":"jest --coverage",
-    "coveralls":"jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "coverage":"npm test --coverage",
+    "coveralls":"npm test --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   },
   "author": "galenyoung",
   "keywords": [
-    "clac",
+    "calc",
     "big number",
     "floating number",
     "numerical calculation",
