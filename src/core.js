@@ -3,13 +3,13 @@ import {
   generateArrayOfSameValue,
   convertExpand,
   safeInteger,
-  devide,
+  innerDevide,
 } from './util/index';
 
 /**
  * @return [string]
 */
-export function calc(num1, num2, operator = '+') {
+export default function calc(num1, num2, operator = '+') {
   checkoutCalcFnParamsDataType(num1);
   checkoutCalcFnParamsDataType(num2);
 
@@ -46,7 +46,7 @@ export function calc(num1, num2, operator = '+') {
     case 'multiply': return union(String(expandNum1 * expandNum2).split(''), maxDigit * 2);
 
     case '/':
-    case 'divide': return devide(expandNum1, expandNum2);
+    case 'divide': return innerDevide(expandNum1, expandNum2);
 
     case '-':
     case 'minus':

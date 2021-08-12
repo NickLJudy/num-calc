@@ -4,8 +4,7 @@ export function unifiedHandlingDataTypeError(functionName, parameter) {
 
 export function checkoutCalcFnParamsDataType(param) {
   const datatype = typeof param;
-  const datatypeArr = ['string', 'number', 'bigint'];
 
   if (datatype === 'string' && isNaN(Number(param))) unifiedHandlingDataTypeError('calc',param);
-  if (!datatypeArr.includes(datatype)) unifiedHandlingDataTypeError('calc',param);
+  if (!['string', 'number', 'bigint'].includes(datatype)) unifiedHandlingDataTypeError('calc',param);
 }

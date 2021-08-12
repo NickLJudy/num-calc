@@ -3,6 +3,7 @@ dist
 lib
 esm
 types
+.coveralls.yml
 
 # Logs
 logs

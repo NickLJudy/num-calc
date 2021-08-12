@@ -30,7 +30,6 @@ export default function convertScientificNotationToString(param) {
   const [m, n] = String(param).trim().split(/[eE]/);
 
   if (n === undefined || Number(n) === 0) return removeExtraZeros(m);
-
   let innerM = m[0] === '+' ? m.substring(1) : m;
   let innerN = n[0] === '+' ? n.substring(1) : n;
 
