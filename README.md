@@ -6,7 +6,7 @@ The underlying method relies on the **BigInt** data type.
 
 Supports scientific numeration calculations.
 
-[![Build Status](https://travis-ci.com/NickLJudy/num-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/num-calc)
+[![Build Status](https://travis-ci.com/NickLJudy/numeral-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/num-calc)
 [![Coverage Status](https://coveralls.io/repos/github/NickLJudy/numeral-calc/badge.svg)](https://coveralls.io/github/NickLJudy/numeral-calc)
 [![Version](https://img.shields.io/npm/v/numeral-calc.svg?maxAge=300&label=version&colorB=007ec6&maxAge=300)](./package.json)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/numeral-calc)](https://bundlephobia.com/package/numeral-calc)
