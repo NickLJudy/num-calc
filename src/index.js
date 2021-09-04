@@ -4,7 +4,7 @@ export function sub(num1, num2) {
   return calc(num1, num2, '-');
 }
 
-export function devide(num1, num2) {
+export function divide(num1, num2) {
   return calc(num1, num2, '/');
 }
 
@@ -22,6 +22,6 @@ export default {
   add,
   sub,
   multi,
-  devide,
+  divide,
   calc,
 }

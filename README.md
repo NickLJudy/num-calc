@@ -6,7 +6,7 @@ The underlying method relies on the **BigInt** data type.
 
 Supports scientific numeration calculations.
 
-[![Build Status](https://travis-ci.com/NickLJudy/numeral-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/num-calc)
+[![Build Status](https://travis-ci.com/NickLJudy/numeral-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/numeral-calc)
 [![Coverage Status](https://coveralls.io/repos/github/NickLJudy/numeral-calc/badge.svg)](https://coveralls.io/github/NickLJudy/numeral-calc)
 [![Version](https://img.shields.io/npm/v/numeral-calc.svg?maxAge=300&label=version&colorB=007ec6&maxAge=300)](./package.json)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/numeral-calc)](https://bundlephobia.com/package/numeral-calc)
@@ -31,7 +31,7 @@ yarn add numeral-calc
 
 
 ```js
-import { add, sub, multi, devide, calc } from 'numeral-calc';
+import { add, sub, multi, divide, calc } from 'numeral-calc';
 
 add(0.1,0.2) // "0.3"
 In the same way: calc(0.1,0.2,"+")  //  "+" can be replaced by "and" or "plus" or "add"
@@ -44,7 +44,7 @@ sub(1.02e1,1.3e-4)  //  "10.19987"
 multi(1.15,100) // "115"
 In the same way: calc(1.15,100,"*")   //  "*" can be replaced by "x" or "multi" or "multiply"
 
-devide(9007199254740997,2) // "4503599627370498.5"
+divide(9007199254740997,2) // "4503599627370498.5"
 In the same way: calc(9007199254740997,2,"/")   //  "/" can be replaced by "divide"
 
 ```

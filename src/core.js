@@ -3,7 +3,7 @@ import {
   generateArrayOfSameValue,
   convertExpand,
   safeInteger,
-  innerDevide,
+  innerDivide,
 } from './util/index';
 
 /**
@@ -46,7 +46,7 @@ export default function calc(num1, num2, operator = '+') {
     case 'multiply': return union(String(expandNum1 * expandNum2).split(''), maxDigit * 2);
 
     case '/':
-    case 'divide': return innerDevide(expandNum1, expandNum2);
+    case 'divide': return innerDivide(expandNum1, expandNum2);
 
     case '-':
     case 'minus':

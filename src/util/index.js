@@ -9,7 +9,7 @@ function isDecimal(param) {
   return index !== -1 && index !== length - 1;
 }
 
-export function innerDevide(a, b) {
+export function innerDivide(a, b) {
   const imperfect = a / b;
 
   return add(imperfect, sub(a,multi(imperfect , b)) / Number(b));
@@ -39,7 +39,7 @@ export function convertExpand(num) {
 }
 
 export default {
-  innerDevide,
+  innerDivide,
   safeInteger,
   convertExpand,
   generateArrayOfSameValue,

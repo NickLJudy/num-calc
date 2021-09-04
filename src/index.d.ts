@@ -10,7 +10,7 @@ export declare function multi(
   num1: string | number | bigint,
   num2: string | number | bigint
 ): string;
-export declare function devide(
+export declare function divide(
   num1: string | number | bigint,
   num2: string | number | bigint
 ): string;
@@ -24,7 +24,7 @@ declare const _default: {
   add: typeof add;
   sub: typeof sub;
   multi: typeof multi;
-  devide: typeof devide;
+  divide: typeof divide;
   calc: typeof calc;
 };
 export default _default;

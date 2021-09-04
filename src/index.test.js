@@ -1,5 +1,5 @@
-import { add, sub, multi, devide ,calc} from './index';
-import { innerDevide, safeInteger, convertExpand, generateArrayOfSameValue, } from "./util/index";
+import { add, sub, multi, divide ,calc} from './index';
+import { innerDivide, safeInteger, convertExpand, generateArrayOfSameValue, } from "./util/index";
 test('func: add', () => {
   expect(add(2, 4)).toBe("6");
 });
@@ -12,8 +12,8 @@ test('func: multi', () => {
   expect(multi(0.2, 0.05)).toBe("0.01");
 });
 
-test('func: devide', () => {
-  expect(devide("9007199254740997", 2n)).toBe("4503599627370498.5");
+test('func: divide', () => {
+  expect(divide("9007199254740997", 2n)).toBe("4503599627370498.5");
 });
 
 test('func: calc', () => {
@@ -42,8 +42,8 @@ test('func: calc', () => {
 });
 
 
-test('func: innerDevide', () => {
-  expect(innerDevide(2, 4)).toBe("0.5");
+test('func: innerDivide', () => {
+  expect(innerDivide(2, 4)).toBe("0.5");
 });
 
 test('func: safeInteger', () => {
