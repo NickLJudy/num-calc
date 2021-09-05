@@ -2,9 +2,8 @@
 
 Solve the ECMAScript language **large number calculation** and **floating point number** problem.
 
-The underlying method relies on the **BigInt** data type.
-
 Supports scientific numeration calculations.
+
 
 [![Build Status](https://travis-ci.com/NickLJudy/numeral-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/numeral-calc)
 [![Coverage Status](https://coveralls.io/repos/github/NickLJudy/numeral-calc/badge.svg)](https://coveralls.io/github/NickLJudy/numeral-calc)
@@ -48,6 +47,15 @@ divide(9007199254740997,2) // "4503599627370498.5"
 In the same way: calc(9007199254740997,2,"/")   //  "/" can be replaced by "divide"
 
 ```
+
+## Objective
+Use the simplest method to solve the most fundamental problem.
+* No new types are generated.
+* Floating-point and large numbers are handled together using numeral-calc.
+
+The underlying method relies on the **BigInt** data type.
+
+
 
 ## Notice
 
