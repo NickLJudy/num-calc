@@ -1,8 +1,8 @@
 {
   "name": "numeral-calc",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Solve the floating-point and large number calculation problems in ECMAScript language",
-  "main": "lib/numeral-calc.js",
+  "main": "lib/numeral-calc.cjs",
   "unpkg": "dist/numeral-calc.js",
   "module": "esm/numeral-calc.js",
   "types": "src/index.d.ts",

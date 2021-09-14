@@ -22,7 +22,7 @@ export default function calc(num1, num2, operator = '+') {
     innerExpandNum2,
   ] : [
     innerExpandNum1,
-    innerExpandNum2 * (diffDigit === 0n ? 1n : 10n ** diffDigit)
+    innerExpandNum2 * (10n ** diffDigit)
   ];
 
   function union(result, digit = maxDigit) {

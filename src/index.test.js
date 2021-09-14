@@ -39,6 +39,7 @@ test('func: calc', () => {
   expect(calc(0.2, '-0.01','divide')).toBe('-20');
   expect(() => calc('NaN', '0.01')).toThrow();
   expect(calc('0.3e-5', '2e-15','-')).toBe("0.000002999999998");
+  expect(calc('-34.5e6', '+2.10e-1','-')).toBe("-34500000.21");
 });
 
 

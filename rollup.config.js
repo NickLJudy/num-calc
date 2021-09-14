@@ -9,7 +9,7 @@ export default [
   //CommonJS
   {
     input,
-    output: { file: 'lib/numeral-calc.js', format: 'cjs', indent: false },
+    output: { file: 'lib/numeral-calc.cjs', format: 'cjs', indent: false },
     external,
     plugins,
   },
