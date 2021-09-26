@@ -1,5 +1,11 @@
 import { checkoutCalcFnParamsDataType } from './util/errorSummary';
 import {
+  AddOpt,
+  SubOpt,
+  MultiOpt,
+  DivideOpt,
+} from './constants/index';
+import {
   generateArrayOfSameValue,
   convertExpand,
   safeInteger,
@@ -9,7 +15,7 @@ import {
 /**
  * @return [string]
 */
-export default function calc(num1, num2, operator = '+') {
+function twoNumsOperation(num1, num2, operator = '+') {
   checkoutCalcFnParamsDataType(num1);
   checkoutCalcFnParamsDataType(num2);
 
@@ -39,26 +45,27 @@ export default function calc(num1, num2, operator = '+') {
     return safeInteger([Minus].concat(innerResult).join(''))
   }
 
-  switch (operator) {
-    case '*':
-    case 'x':
-    case 'multi':
-    case 'multiply': return union(String(expandNum1 * expandNum2).split(''), maxDigit * 2);
+  if (MultiOpt.includes(operator)) return union(String(expandNum1 * expandNum2).split(''), maxDigit * 2);
 
-    case '/':
-    case 'divide': return innerDivide(expandNum1, expandNum2);
+  if (DivideOpt.includes(operator)) return innerDivide(expandNum1, expandNum2);
 
-    case '-':
-    case 'minus':
-    case 'sub':
-    case 'subtract': return union(String(expandNum1 - expandNum2).split(''));
+  if (SubOpt.includes(operator)) return union(String(expandNum1 - expandNum2).split(''));
 
-    case '+':
-    case 'and':
-    case 'plus':
-    case 'add':
-    default: {
-      return union(String(expandNum1 + expandNum2).split(''));
-    };
+  return union(String(expandNum1 + expandNum2).split(''));
+}
+
+export default function calc(...paramArr) {
+  if (paramArr.length < 3) throw new Error('Check whether the number of parameters of the calculated function meets requirements.(From:numeral-calc)');
+
+  const operator = paramArr.pop();
+
+  if (!AddOpt.concat(SubOpt, MultiOpt, DivideOpt).includes(operator)) throw new Error('Operator missing.');
+
+  if (AddOpt.concat(MultiOpt).includes(operator) && paramArr.length > 2) {
+    return paramArr.reduce((acc, cur) => twoNumsOperation(acc, cur, operator));
   }
+
+  const [num1, num2] = paramArr;
+
+  return twoNumsOperation(num1, num2, operator);
 }

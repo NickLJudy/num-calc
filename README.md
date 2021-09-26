@@ -35,12 +35,16 @@ import { add, sub, multi, divide, calc } from 'numeral-calc';
 add(0.1,0.2) // "0.3"
 In the same way: calc(0.1,0.2,"+")  //  "+" can be replaced by "and" or "plus" or "add"
 
+add(0.1,0.2,1) // "1.3"
+
 sub(0.3,0.1) // "0.2"
 In the same way: calc(0.3,0.1,"-")  //  "-" can be replaced by "minus" or "sub" or "subtract"
 /* Support for custom scientific notation. */
 sub(1.02e1,1.3e-4)  //  "10.19987"
 
 multi(1.15,100) // "115"
+
+multi(1.15,100,2) // "230"
 In the same way: calc(1.15,100,"*")   //  "*" can be replaced by "x" or "multi" or "multiply"
 
 divide(9007199254740997,2) // "4503599627370498.5"
@@ -55,10 +59,11 @@ Use the simplest method to solve the most fundamental problem.
 
 The underlying method relies on the **BigInt** data type.
 
+Addition and multiplication can take multiple arguments.
 
 
 ## Notice
 
-There seems to be no such business scenario. LOL
+There seems to be no such business scenario. 
 * The divisor cannot exceed the safe range of the JS language.
 * Scientific notation exponentials cannot exceed the safe limits of the JS language.

@@ -1,23 +1,22 @@
-export declare function add(
-  num1: string | number | bigint,
-  num2: string | number | bigint
-  ): string;
+export declare function add(...numArr: string[] | number[] | bigint[]): string;
+
 export declare function sub(
   num1: string | number | bigint,
   num2: string | number | bigint
 ): string;
-export declare function multi(
-  num1: string | number | bigint,
-  num2: string | number | bigint
-): string;
+
+export declare function multi(...numArr: string[] | number[] | bigint[]): string;
+
 export declare function divide(
   num1: string | number | bigint,
   num2: string | number | bigint
 ): string;
+
 export declare function calc(
-  num1: string | number | bigint,
-  num2: string | number | bigint,
-  operator: '+' | 'and' | 'plus' | 'add' | '-' | 'minus' | 'sub' | 'subtract' | '*' | 'x' | 'multi' | 'multiply' | '/' | 'divide'
+  ...paramArr: [
+    ...numArr: string[] | number[] | bigint[],
+    '+' | 'and' | 'plus' | 'add' | '-' | 'minus' | 'sub' | 'subtract' | '*' | 'x' | 'multi' | 'multiply' | '/' | 'divide'
+  ]
 ): string;
 
 declare const _default: {

@@ -17,10 +17,13 @@ test('func: divide', () => {
 });
 
 test('func: calc', () => {
-  expect(calc("2", "4")).toBe("6");
+  expect(()=>calc("2", "4")).toThrow();
+  expect(()=>calc("2", "4",'XX')).toThrow();
+  expect(calc("2", "4",'+')).toBe("6");
   expect(calc(0.2, 0.1,'and')).toBe("0.3");
   expect(calc(Number.MAX_SAFE_INTEGER, 6,'plus')).toBe("9007199254740997");
   expect(calc(2, "-9007199254740997",'add')).toBe("-9007199254740995");
+  expect(calc("2", "4",6,'+')).toBe("12");
 
   expect(calc(2, 4,'-')).toBe("-2");
   expect(calc(Number.MIN_SAFE_INTEGER, 5,'minus')).toBe("-9007199254740996");
@@ -31,6 +34,7 @@ test('func: calc', () => {
   expect(calc(2.2, 100,'x')).toBe("220");
   expect(calc("9007199254740993", -0.5,'multi')).toBe("-4503599627370496.5");
   expect(calc(-1200.0, -1e-4,'multiply')).toBe("0.12");
+  expect(calc(2, 10,0.05,'*')).toBe("1");
 
   expect(calc("9007199254740997", 2n,'/')).toBe("4503599627370498.5");
   expect(calc(-0.3, -0.1,'divide')).toBe("3");
@@ -39,7 +43,7 @@ test('func: calc', () => {
   expect(calc(0.2, '-0.01','divide')).toBe('-20');
   expect(() => calc('NaN', '0.01')).toThrow();
   expect(calc('0.3e-5', '2e-15','-')).toBe("0.000002999999998");
-  expect(calc('-34.5e6', '+2.10e-1','-')).toBe("-34500000.21");
+  expect(calc('-34.5E6', '+2.10e-1','-')).toBe("-34500000.21");
 });
 
 
