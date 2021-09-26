@@ -9,7 +9,7 @@ on:
       - main
       - next
 jobs:
-  Test Suite:
+  TestSuite:
     name: Ready for Test
     runs-on: ubuntu-latest
     steps:
