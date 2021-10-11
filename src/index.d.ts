@@ -15,7 +15,7 @@ export declare function divide(
 export declare function calc(
   ...paramArr: [
     ...numArr: string[] | number[] | bigint[],
-    operator: '+' | 'and' | 'plus' | 'add' | '-' | 'minus' | 'sub' | 'subtract' | '*' | 'x' | 'multi' | 'multiply' | '/' | 'divide'
+    '+' | 'and' | 'plus' | 'add' | '-' | 'minus' | 'sub' | 'subtract' | '*' | 'x' | 'multi' | 'multiply' | '/' | 'divide'
   ]
 ): string;
 
