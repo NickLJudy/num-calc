@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/NickLJudy/numeral-calc/compare/v1.0.8...v1.0.9) (2022-03-22)
+
+
+### Bug Fixes
+
+* add logo ([57c1f6d](https://github.com/NickLJudy/numeral-calc/commit/57c1f6d4d30ad6189358393dc62667d06aa5158e))
+
 ## [1.0.8](https://github.com/NickLJudy/numeral-calc/compare/v1.0.7...v1.0.8) (2021-10-13)
 
 
