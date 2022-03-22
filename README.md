@@ -1,16 +1,17 @@
 # numeral-calc
 
+![logo](./logo.jpg)
+
 Solve the ECMAScript language **large number calculation** and **floating point number** problem.
 
 Supports scientific numeration calculations.
-
 
 [![Build Status](https://travis-ci.com/NickLJudy/numeral-calc.svg?branch=main)](https://travis-ci.com/NickLJudy/numeral-calc)
 [![Coverage Status](https://coveralls.io/repos/github/NickLJudy/numeral-calc/badge.svg)](https://coveralls.io/github/NickLJudy/numeral-calc)
 [![Version](https://img.shields.io/npm/v/numeral-calc.svg?maxAge=300&label=version&colorB=007ec6&maxAge=300)](./package.json)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/numeral-calc)](https://bundlephobia.com/package/numeral-calc)
-![dependencies-logo](https://status.david-dm.org/gh/NickLJudy/numeral-calc.svg)
 ![last-commit-date-logo](https://img.shields.io/github/last-commit/NickLJudy/numeral-calc)
+<!-- ![dependencies-logo](https://status.david-dm.org/gh/NickLJudy/numeral-calc.svg) -->
 ## Installation
 
 The numeral-calc package lives in [npm](https://www.npmjs.com/get-npm). To install the latest stable version, run the following command:
@@ -53,6 +54,7 @@ In the same way: calc(9007199254740997,2,"/")   //  "/" can be replaced by "divi
 ```
 
 ## Objective
+
 Use the simplest method to solve the most fundamental problem.
 * No new types are generated.
 * Floating-point and large numbers are handled together using numeral-calc.

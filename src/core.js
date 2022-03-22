@@ -52,7 +52,7 @@ function twoNumsOperation(num1, num2, operator = '+') {
   if (SubOpt.includes(operator)) return union(String(expandNum1 - expandNum2).split(''));
 
   return union(String(expandNum1 + expandNum2).split(''));
-}
+};
 
 export default function calc(...paramArr) {
   if (paramArr.length < 3) throw new Error('Check whether the number of parameters of the calculated function meets requirements.(From:numeral-calc)');
@@ -68,4 +68,4 @@ export default function calc(...paramArr) {
   const [num1, num2] = paramArr;
 
   return twoNumsOperation(num1, num2, operator);
-}
+};
